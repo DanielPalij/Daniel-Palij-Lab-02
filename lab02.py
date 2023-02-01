@@ -5,20 +5,20 @@ def main():
             "Full_name": "Daniel Palij",
             "Student_id": "2786199911",
             "Pizza_toppings": [
-                               "Pepperoni",
-                               "Banana peppers",
-                               "Onions"
+                               "PEPPERONI",
+                               "BANANA PEPPERS",
+                               "ONIONS"
                             ],
            
             "Movies": [
                     {   
-                     "Title": "Parasite",
-                     "Genre": "Thriller"
+                     "Title": "parasite",
+                     "Genre": "thriller"
                     },
                     
                     { 
-                      "Title": "Prisioners",
-                      "Genre": "Thriller"
+                      "Title": "prisioners",
+                      "Genre": "thriller"
                     }
                     ]
 
@@ -79,7 +79,7 @@ def print_movie_genres(about_me):
     s = '\nI like to watch'
     for i, m in enumerate(about_me['Movies']):
         if i == len(about_me['Movies']) - 1:
-            s += f" and {m['Genre']} movies"
+            s += f" and {m['Genre']} movies."
         else:
             s += f" {m['Genre']},"
     print(s)
@@ -91,10 +91,10 @@ def print_movie_genres(about_me):
 # TODO: Step 8 - Function that prints comma-separated list of movie titles
 def print_movie_titles(movie_list):
     
-    s = '\nI like to watch'
+    s = '\nSome of my favourite movies are'
     for i, m in enumerate(movie_list):
         if i == len(movie_list) - 1:
-            s += f" and {m['Title'].title()} movies"
+            s += f" and {m['Title'].title()}!"
         else:
             s += f" {m['Title'].title()},"
     print(s)
